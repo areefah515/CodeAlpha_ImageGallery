@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Img Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1 class="header1">IMAGE GALLERY<br/></h1>
+        <div class="gallery">
+            <img src="image1.jpg" height="300" width="300" />
+            <img src="image2.jpg" height="300" width="300"/>
+            <img src="image3.jfif" height="300" width="300"/>
+            <img src="image4.jpg" height="300" width="300"/>
+            <img src="image5.webp" height="300" width="300"/>
+            <img src="image6.jpg" height="300" width="300"/>
+            <img src="image7.jfif" height="300" width="300"/>
+            <img src="image8.jfif" height="300" width="300"/>
+            <img src="image9.jfif" height="300" width="300"/>
+        </div>
+    </center>
+
+    <div id="modal">
+        <span id="close" onclick="closeModal()">&times;</span>
+        <span class="nav-buttons prev" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="nav-buttons next" onclick="changeSlide(1)">&#10095;</span>
+        <div id="modal-content">
+            <img id="modal-img" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

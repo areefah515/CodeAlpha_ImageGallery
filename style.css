@@ -1,0 +1,95 @@
+header {
+    background-color: black;
+}
+
+.gallery {
+    background-color: black;
+}
+
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.para {
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 80;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modal-content {
+    margin: auto;
+    display: block;
+    max-width: 50%;
+    max-height: 80%;
+}
+
+#modal-img {
+    width: 80%;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#close:hover {
+    color: #bbb;
+}
+
+.nav-buttons {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.nav-buttons:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
